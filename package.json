@@ -1,0 +1,23 @@
+{
+  "name": "smart-bug-reporter",
+  "version": "1.0.0",
+  "description": "One-click bug capture: screenshot, console, network, browser info. Copy as Jira or GitHub issue.",
+  "private": true,
+  "keywords": [
+    "chrome-extension",
+    "bug-report",
+    "jira",
+    "github",
+    "qa",
+    "screenshot",
+    "console-logs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "build:icon": "node store-assets/build-icon.js"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.0"
+  }
+}

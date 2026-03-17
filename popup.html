@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Bug Reporter</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Smart Bug Reporter</h1>
+      <p class="subtitle">Test the full app flow, then generate a bug report</p>
+    </header>
+
+    <div id="flowHint" class="flow-hint">
+      <strong>Like a manual tester:</strong> Log in → Click <strong>Run auto-test</strong> → The plugin opens pages, fills forms, clicks buttons and links, and records all bugs → Then generate report
+    </div>
+
+    <div id="formSection" class="section">
+      <div id="idleActions" class="button-row">
+        <button id="btnRunAutoTest" type="button" class="btn btn-primary">Run auto-test</button>
+        <button id="btnStartSession" type="button" class="btn btn-outline">Start recording only</button>
+      </div>
+      <div id="recordingSection" class="section hidden">
+        <p id="recordingStatus" class="recording-status">Recording… Use the app (login, navigate, click), then click below.</p>
+        <div id="autoTestSection" class="auto-test-section hidden">
+          <p id="autoTestStatus" class="auto-test-status">Testing like a manual tester: opening pages, filling forms, clicking buttons. <span id="autoTestPages">0</span> pages done.</p>
+          <button id="btnStopAutoTest" type="button" class="btn btn-warn">Stop auto-test</button>
+        </div>
+        <button id="btnStopSession" type="button" class="btn btn-stop">Stop &amp; generate report</button>
+      </div>
+      <p class="divider">— or capture current page only —</p>
+      <label class="label">Title (optional)</label>
+      <input type="text" id="title" class="input" placeholder="Short bug title">
+      <label class="label">Steps to reproduce (optional)</label>
+      <textarea id="steps" class="textarea" placeholder="1. Go to...&#10;2. Click...&#10;3. See error" rows="2"></textarea>
+      <button id="btnCapture" type="button" class="btn btn-outline">Capture current page</button>
+    </div>
+
+    <div id="resultSection" class="section hidden">
+      <p id="resultStatus" class="result-status"></p>
+      <div class="preview" id="preview"></div>
+      <div class="actions">
+        <button id="btnJira" type="button" class="btn btn-outline">Copy as Jira</button>
+        <button id="btnGitHub" type="button" class="btn btn-outline">Copy as GitHub</button>
+        <button id="btnAgain" type="button" class="btn btn-ghost">Capture again</button>
+      </div>
+    </div>
+
+    <div id="errorSection" class="error-section hidden"></div>
+  </div>
+  <script src="formatters.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

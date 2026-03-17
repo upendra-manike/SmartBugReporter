@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – Smart Bug Reporter</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.6; max-width: 720px; margin: 0 auto; padding: 24px; color: #1a1a2e; }
+    h1 { font-size: 1.5rem; margin-top: 0; }
+    h2 { font-size: 1.1rem; margin-top: 1.5em; }
+    p, ul { margin: 0.5em 0; }
+    ul { padding-left: 1.5em; }
+    .updated { color: #64748b; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy – Smart Bug Reporter</h1>
+  <p class="updated">Last updated: March 2025</p>
+
+  <p>This privacy policy applies to the <strong>Smart Bug Reporter</strong> Chrome extension (“the extension”).</p>
+
+  <h2>1. What the extension does</h2>
+  <p>When you click “Capture bug,” the extension captures a screenshot of the current tab, console logs and network requests from that page, and browser/environment information. It then formats this into a report that you can copy and paste into Jira or GitHub. The extension is intended for developers, QA, and product teams.</p>
+
+  <h2>2. What data is used</h2>
+  <p>Only when you click “Capture bug,” the extension may:</p>
+  <ul>
+    <li>Capture a <strong>screenshot</strong> of the visible area of the current tab.</li>
+    <li>Read <strong>console logs</strong> (log, info, warn, error, debug) that our script has stored from the page.</li>
+    <li>Read <strong>network request</strong> data (URL, method, status, duration) that our script has stored from the page.</li>
+    <li>Read <strong>browser/environment</strong> info (page URL, User-Agent, platform, screen and viewport size).</li>
+  </ul>
+  <p>Any <strong>title</strong> and <strong>steps to reproduce</strong> you type in the popup are included only in the report you copy. They are not sent to us or stored on our servers.</p>
+
+  <h2>3. Where data is stored</h2>
+  <p>Capture data is passed to the extension popup so you can copy the report. It is not stored permanently on our servers or synced anywhere. If the extension uses local storage for preferences, that data stays on your device only.</p>
+
+  <h2>4. Data sharing and transfer</h2>
+  <p>We do <strong>not</strong>:</p>
+  <ul>
+    <li>Sell, rent, or share your data with third parties.</li>
+    <li>Send screenshots, logs, or network data to any remote server.</li>
+    <li>Use your data for advertising, analytics, or credit/lending purposes.</li>
+  </ul>
+  <p>You choose where to paste the report (e.g. your own Jira or GitHub).</p>
+
+  <h2>5. Your control</h2>
+  <p>You decide when to click “Capture bug.” No capture or data collection happens in the background. You can close the popup without copying if you do not want to use the report.</p>
+
+  <h2>6. Permissions</h2>
+  <p>The extension requests:</p>
+  <ul>
+    <li><strong>activeTab</strong> – To take a screenshot of the current tab and read capture data when you click “Capture bug.”</li>
+    <li><strong>Host permissions</strong> – So our content script can run on the page you are viewing to capture console and network data, and so we can run a script when you capture. We do not access sites in the background.</li>
+    <li><strong>scripting</strong> – To run a function in the current tab when you click “Capture bug” to collect the stored console and network data.</li>
+    <li><strong>storage</strong> – Only for optional local preferences, if used. Capture data is not stored permanently.</li>
+  </ul>
+
+  <h2>7. Changes</h2>
+  <p>We may update this policy from time to time. The “Last updated” date at the top will be revised when we do. Continued use of the extension after changes means you accept the updated policy.</p>
+
+  <h2>8. Contact</h2>
+  <p>For questions about this privacy policy or the extension, use the contact email provided in the Chrome Web Store listing for Smart Bug Reporter.</p>
+</body>
+</html>
