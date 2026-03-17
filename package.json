@@ -15,7 +15,8 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "build:icon": "node store-assets/build-icon.js"
+    "build:icon": "node store-assets/build-icon.js",
+    "build:screens": "node store-assets/build-screenshots.js"
   },
   "devDependencies": {
     "sharp": "^0.33.0"
