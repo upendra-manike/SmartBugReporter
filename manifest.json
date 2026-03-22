@@ -1,12 +1,11 @@
 {
   "manifest_version": 3,
   "name": "Smart Bug Reporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "One-click bug capture: screenshot, console logs, network requests, browser info. Generate Jira or GitHub issues.",
   "permissions": [
     "activeTab",
-    "scripting",
-    "storage"
+    "scripting"
   ],
   "host_permissions": [
     "<all_urls>",

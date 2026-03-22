@@ -36,11 +36,12 @@ The scripting API is used when the user clicks "Capture bug" to run a function i
 
 ---
 
-## 5. Justification for storage
+## 5. Storage permission (not used)
 
-```
-Storage is used only if we need to remember user preferences (e.g. last-used format). Capture data (screenshot, logs, requests) is not stored permanently; it is passed to the popup for the user to copy and then discarded. We do not sync or send stored data to any server.
-```
+**As of v1.0.1, the extension does not request `storage`.**  
+Do **not** enter a storage justification in the Privacy practices tab—remove that field if the dashboard still shows it from an older draft, or leave it blank if optional.
+
+Bug report data (screenshot, logs, requests) is kept in memory for the popup only and is not persisted with `chrome.storage`.
 
 ---
 

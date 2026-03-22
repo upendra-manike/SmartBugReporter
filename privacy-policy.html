@@ -33,7 +33,7 @@
   <p>Any <strong>title</strong> and <strong>steps to reproduce</strong> you type in the popup are included only in the report you copy. They are not sent to us or stored on our servers.</p>
 
   <h2>3. Where data is stored</h2>
-  <p>Capture data is passed to the extension popup so you can copy the report. It is not stored permanently on our servers or synced anywhere. If the extension uses local storage for preferences, that data stays on your device only.</p>
+  <p>Capture data is passed to the extension popup so you can copy the report. It is not stored permanently on our servers or synced anywhere. The extension does not use Chrome’s <code>storage</code> API; nothing is persisted beyond your current session in the browser.</p>
 
   <h2>4. Data sharing and transfer</h2>
   <p>We do <strong>not</strong>:</p>
@@ -53,7 +53,6 @@
     <li><strong>activeTab</strong> – To take a screenshot of the current tab and read capture data when you click “Capture bug.”</li>
     <li><strong>Host permissions</strong> – So our content script can run on the page you are viewing to capture console and network data, and so we can run a script when you capture. We do not access sites in the background.</li>
     <li><strong>scripting</strong> – To run a function in the current tab when you click “Capture bug” to collect the stored console and network data.</li>
-    <li><strong>storage</strong> – Only for optional local preferences, if used. Capture data is not stored permanently.</li>
   </ul>
 
   <h2>7. Changes</h2>

@@ -36,7 +36,7 @@ Use this list when submitting the extension to the Chrome Web Store.
 - [ ] **Justification for activeTab** – Copy from same file.
 - [ ] **Justification for host permission use** – Copy from same file.
 - [ ] **Justification for scripting** – Copy from same file.
-- [ ] **Justification for storage** – Copy from same file.
+- [ ] **Storage** – Not requested (v1.0.1+); no justification needed.
 - [ ] **Privacy policy URL** – Public URL where your privacy policy is hosted.
   - Host `privacy-policy.html` (e.g. GitHub Pages). See `PRIVACY-POLICY-URL.md`.
 - [ ] **Data usage** – “What user data do you plan to collect?”  
