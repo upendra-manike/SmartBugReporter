@@ -7,7 +7,7 @@ Use these when submitting at [Chrome Web Store Developer Dashboard](https://chro
 ## Short description (132 characters max)
 
 **Option A:**  
-One-click bug capture: screenshot, console logs, network requests & browser info. Copy as Jira or GitHub issue. For QA & product teams.
+Run auto-test + one-click bug capture: screenshot, console & network requests + browser info. Copy as Jira or GitHub issue.
 
 **Option B (128 chars):**  
 Capture bugs in one click: screenshot, console, network, browser info. Generate ready-to-paste Jira and GitHub issues. For QA & startups.
@@ -20,7 +20,7 @@ One-click bug reports with screenshot, console logs, network requests & browser 
 ## Detailed description (paste into store)
 
 ```
-Smart Bug Reporter captures everything needed for a bug report in one click, then lets you paste it straight into Jira or GitHub.
+Smart Bug Reporter lets you do a one-click bug capture or **Run auto-test** to automatically navigate and record a user-like app flow, then lets you paste the results straight into Jira or GitHub.
 
 WHAT IT CAPTURES
 
@@ -29,13 +29,14 @@ WHAT IT CAPTURES
 • Network requests – Last 50 fetch/XHR calls (URL, method, status, duration)
 • Browser info – Page URL, User-Agent, platform, screen and viewport size
 • Steps to reproduce – You type these in the popup (optional title and steps)
+• Auto-test flow – **Run auto-test** navigates same-origin pages (up to 15), performs safe form filling / button clicking, then captures screenshots, console and network data to generate the report.
 
 HOW TO USE
 
 1. Open the page where you see the bug.
 2. Click the Smart Bug Reporter icon.
 3. Optionally enter a short title and steps to reproduce.
-4. Click "Capture bug".
+4. Click **Run auto-test** for automated flow capture, or click "Capture bug" for manual capture.
 5. Click "Copy as Jira" or "Copy as GitHub" and paste into your issue tracker.
 
 WHO IT'S FOR
@@ -55,6 +56,7 @@ LIMITATIONS
 • Console and network are captured from page load. Reload the page first if you need logs from the very start.
 • Screenshot is the visible area only (no full-page scroll).
 • Restricted pages (e.g. chrome://) cannot be captured.
+• Auto-test captures a limited flow (same-origin pages up to 15) and performs safe, best-effort interactions.
 ```
 
 ---
